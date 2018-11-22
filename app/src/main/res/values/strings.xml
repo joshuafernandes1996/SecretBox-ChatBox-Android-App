@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Secret Box</string>
+    <string name="title_activity_bluetooth">BluetoothActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+</resources>

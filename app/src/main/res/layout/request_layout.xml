@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reqLay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#bbbae0">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/reqImg"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:saveEnabled="false"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/fromReq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/onlineIcon"
+        android:layout_alignTop="@+id/reqImg"
+        android:text="From Person"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/onlineIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/reqImg"
+        android:layout_marginEnd="157dp"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/online" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/reqAccept"
+        android:text="___________________________________________________"
+        android:textColor="#80ffffff" />
+
+    <Button
+        android:id="@+id/reqAccept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/fromReq"
+        android:layout_below="@+id/fromReq"
+        android:background="@drawable/accept_req"
+        android:text="ACCEPT" />
+
+    <Button
+        android:id="@+id/reqReject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fromReq"
+        android:layout_marginLeft="20dp"
+        android:layout_toEndOf="@+id/reqAccept"
+        android:background="@drawable/reject_req"
+        android:text="REJECT" />
+
+</RelativeLayout>

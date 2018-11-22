@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/startpageback"
+    tools:context=".ProfileActivity">
+
+    <include layout="@layout/appbar" android:id="@+id/profileAppBar"/>
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:foregroundGravity="center"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/displayName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="251dp"
+        android:fontFamily="@font/font2"
+        android:text="Display Name"
+        android:textColor="#fff"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="204dp"
+        android:fontFamily="@font/font1"
+        android:text="STATUS"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/friends_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="164dp"
+        android:layout_marginStart="116dp"
+        android:text="Total Friends : "
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/sendRequest"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/logbtn"
+        android:text="Send Friend Request"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/declineRequest"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/logbtn"
+        android:text="Decline Friend Request"
+        android:textColor="#fff" />
+
+    <TextView
+        android:id="@+id/totFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/friends_count"
+        android:layout_marginEnd="129dp"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="15sp" />
+</RelativeLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/settingView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/startpageback"
+    tools:context=".SettingsActivity">
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/profile"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="0dp" />
+
+    <io.saeid.fabloading.LoadingView
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="290dp"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:visibility="invisible"
+        app:mfl_duration="1000"
+        app:mfl_onclickLoading="true"
+        app:mfl_repeat="50" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="264dp"
+        android:fontFamily="@font/font2"
+        android:maxLength="200"
+        android:text="Name"
+        android:textColor="#fff"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/profile_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        android:fontFamily="@font/font1"
+        android:maxLength="200"
+        android:text="Status"
+        android:textColor="@android:color/holo_orange_light"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/chg_image"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/profile_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/logbtn"
+        android:fontFamily="@font/font3"
+        android:text="Change Display Image"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/chg_status"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/profile_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/logbtn"
+        android:fontFamily="@font/font3"
+        android:text="Change Status"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/chg_password"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/profile_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="139dp"
+        android:background="@drawable/logbtn"
+        android:fontFamily="@font/font3"
+        android:text="Change Encryption Password"
+        android:textColor="#fff"
+        android:textStyle="bold" />
+
+    <com.jackandphantom.circularprogressbar.CircleProgressbar
+        android:id="@+id/profileProgress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/chg_status"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="10dp"
+        app:cpb_backgroundProgressColor="#fff"
+        app:cpb_foregroundProgressColor="#90a7cc"
+        app:cpb_foregroundProgressWidth="30"
+        app:cpb_progress="20"
+        app:cpb_roundedCorner="true"
+        app:cpb_touchEnabled="false" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chg_status"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="28dp"
+        android:text="Progress"
+        android:textColor="@android:color/holo_orange_light" />
+
+    <TextView
+        android:id="@+id/percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/chg_image"
+        android:layout_alignEnd="@+id/textView10"
+        android:layout_marginTop="-6dp"
+        android:layout_marginEnd="0dp"
+        android:gravity="center"
+        android:text="100%\nComplete"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/settingsMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/menu_settings" />
+
+</RelativeLayout>

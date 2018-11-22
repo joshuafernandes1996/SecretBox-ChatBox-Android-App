@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/msgSingleLay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/msgProfileLay2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/msgTextLay"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="280dp"
+        android:layout_marginBottom="-57dp"
+        android:src="@drawable/profile" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/msgProfileLay"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/msgTextLay"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="-57dp"
+        android:layout_marginStart="11dp"
+        android:src="@drawable/profile" />
+
+    <TextView
+        android:id="@+id/msgTextLay"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/msgback"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Message"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/msgName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/msgProfileLay"
+        android:layout_marginStart="93dp"
+        android:text="TextView"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/msgTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/msgTextLay"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="-27dp"
+        android:text="00:00"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/msgImage"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/msgTextLay"
+        android:background="@drawable/image_display_shape"
+        android:scaleType="centerInside" />
+
+</RelativeLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluetoothchat">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/bluetoothchat"
+        android:padding="10dp"
+        android:text="Help"
+        android:textColor="#fff"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/helpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="92dp"
+        android:overScrollMode="always"
+        android:padding="10dp"
+        android:scrollbars="vertical"
+        android:scrollHorizontally="false"
+        android:text="1. First you must Manually Pair Your Devices.\n\n2. Click on Connect to show all paired Devices\n\n3. One of the communication must click on the Device name he wants to chat with.\n\n4. Done"
+        android:textColor="@color/colorPrimary"
+        android:textSize="17sp"
+        android:verticalScrollbarPosition="right" />
+
+</RelativeLayout>

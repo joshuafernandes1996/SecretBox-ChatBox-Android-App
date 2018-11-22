@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/startpageback"
+    tools:context=".MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/mainToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/mainAppBar"
+            layout="@layout/appbar" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mainTabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp"
+        android:background="@color/colorPrimary"
+        android:theme="@android:style/ThemeOverlay.Material.Dark.ActionBar"
+        app:tabIconTint="@color/common_google_signin_btn_text_dark_default">
+
+    </android.support.design.widget.TabLayout>
+
+    <ImageView
+        android:id="@+id/error"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/error" />
+
+    <TextView
+        android:id="@+id/textError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="202dp"
+        android:text="Check Network"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bluetoothBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="137dp"
+        android:background="@drawable/logbtn"
+        android:padding="10dp"
+        android:text="Try Chatting Through Bluetooth?"
+        android:textColor="#fff"
+        android:visibility="invisible" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tabPager"
+        android:layout_width="wrap_content"
+        android:layout_height="512dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true">
+
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

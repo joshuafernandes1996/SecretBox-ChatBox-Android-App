@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/startActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/startpageback"
+    tools:context=".startActivity">
+
+    <Button
+        android:id="@+id/reg_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/startloginbutton"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/start_login_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/startloginbutton"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+    <ImageView
+        android:id="@+id/chatBubble"
+        android:layout_width="185dp"
+        android:layout_height="81dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="232dp"
+        app:srcCompat="@drawable/chatbubble" />
+
+    <Button
+        android:id="@+id/chatBluetooth"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:background="@drawable/startloginbutton"
+        android:drawableTop="@drawable/bluetooth"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:text="Bluetooth Chat"
+        android:textAllCaps="false"
+        android:textColor="#fff" />
+
+    <com.hanks.htextview.rainbow.RainbowTextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="65dp"
+        android:fontFamily="@font/font4"
+        android:gravity="center"
+        android:text="SECRET\nBOX"
+        android:textSize="60sp"
+        app:colorSpace="150dp"
+        app:colorSpeed="10dp" />
+
+    <com.hanks.htextview.scale.ScaleTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="194dp"
+        android:fontFamily="@font/font2"
+        android:text="Welcome to SecretBox!"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="18sp" />
+
+</RelativeLayout>
