@@ -1,7 +1,6 @@
 # SecretBox ChatBox Android App
 
-#Developers
-
+# Developers
 ## Alisha Lotlikar
 [Alisha's Github Account](https://github.com/AlishaLotlikar)
 
